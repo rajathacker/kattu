@@ -1,0 +1,10 @@
+---
+- name: Sample playbook
+  hosts: all
+  become: true
+  tasks:
+  - name: installing a package
+    yum:
+      name: vsftpd
+      state: latest
+...
